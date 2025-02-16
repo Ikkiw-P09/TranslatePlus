@@ -40,7 +40,7 @@ Thank you to our teachers, AI, friends, and ourselves for supporting us in this 
         ![Screenshot 2025-02-16 143753](https://github.com/user-attachments/assets/5796abfe-6bc7-45b1-ad1c-61bdbdefcb78)
 
     3.8 Click "Apply" and then click "OK."  
-        ![Screenshot 2025-02-16 141512](https://github.com/user-attachments/assets/11a50c25-9444-4275-ab8c-795f425d233f)
+        ![Screenshot 2025-02-16 141512](https://github.com/user-attachments/assets/11a50c25-9444-4275-ab8c-795f425d233f)  
         ![Screenshot 2025-02-16 141524](https://github.com/user-attachments/assets/e12d567c-76ba-4123-813a-b343a5d4accb)
 
 4.  You can now use the program!
