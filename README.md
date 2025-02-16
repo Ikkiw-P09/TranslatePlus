@@ -1,8 +1,8 @@
 # TranslatePlus
 
-TranslatePlus is a project created by Ikkiw P09 and team. We developed this project to improve language translation using AI (specifically, Google Gemini).
-
-Thank you to our teachers, AI, friends, and ourselves for supporting us in this endeavor.
+TranslatePlus is a project created by Ikkiw P09 and team.
+We developed this project to improve language translation using AI (specifically, Google Gemini).
+Thank you to the teachers, AI, friends, and myself for their support of me and the team.
 
 # How to Use TranslatePlus (Desktop Version)
 
