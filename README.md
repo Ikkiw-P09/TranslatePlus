@@ -12,7 +12,7 @@ Thank you to our teachers, AI, friends, and ourselves for supporting us in this 
 
 1.  During setup, select your preferred installation option (remember your choice!).
 
-    ![Installation Option Choice](https://github.com/user-attachments/assets/9e3e543b-a04d-408c-b572-a95388f174dc)
+    [Installation Option Choice](https://github.com/user-attachments/assets/9e3e543b-a04d-408c-b572-a95388f174dc)
 
 2.  Proceed with the setup normally, as with other programs.
 
