@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslatePlus DevPortal</title>
+</head>
+<body>
+    <div class="login-container" id="loginContainer"></div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="system" id="systemContainer" style="display: none;">
+        <h2>Edit .config File</h2>
+        <div class="config-editor">
+            <textarea id="configContent" rows="10" cols="50"></textarea>
+            <div class="button-group">
+                <button id="saveConfig">Save Changes</button>
+                <button id="loadConfig">Load Config</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+
+    </style>
+</body>
+</html>

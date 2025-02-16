@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Itim';
+    src: url(/src/fonts/Itim-Regular.ttf);
+}
+
+body {
+    font-family: Itim;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.download-block {
+    /* Apply gradient to the div */
+    background-image: linear-gradient(to right, #f0f0f0, #ffffff); /* Customize colors */
+    background-size: 200% auto;
+    background-position: 0 center;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-position 0.5s ease; /* Transition for background-position */
+}
+
+.download-block:hover {
+    transform: scale(1.03);
+    /* background-position will be updated by JavaScript */
+}
+
+.download-block h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.download-block p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.download-block a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.download-block a:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .download-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .download-block {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+/* "orsec" section styling */
+.orsec {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.orsec hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.orsec a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.orsec a:hover {
+    text-decoration: underline;
+}
+
+/* "procons" section styling */
+.procons {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Adjust max-width for the table */
+    text-align: center;
+}
+
+.procons h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.procons table {
+    width: 100%;
+    border-collapse: collapse; /* Removes spacing between table cells */
+    margin-top: 10px;
+}
+
+.procons th,
+.procons td {
+    border: 1px solid #ddd; /* Adds borders to cells */
+    padding: 8px;
+    text-align: left;
+}
+
+.procons th {
+    background-color: #f4f4f4; /* Light background for header cells */
+    font-weight: bold;
+}
+
+.procons tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly different background for even rows */
+}
+
+/* Footer Styling */
+footer {
+    /* Removed background-color */
+    color: #333; /* Changed text color to be visible on the default background */
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; /* Add some space above the footer */
+    /* Removed border-radius */
+}
+
+footer p {
+    margin-bottom: 5px; /* Space between paragraphs in the footer */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+footer a {
+    color: #007bff; /* Link color in the footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

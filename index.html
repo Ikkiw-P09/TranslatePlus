@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TranslatePlus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/" class="navbar-brand">TranslatePlus</a>
+    <a href="/about" class="about">About</a>
+    <a href="/th.html" class="changelang">TH</a>
+  </nav>
+
+  <div class="main-content">
+    <div class="app-container">
+
+      <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+
+      <select id="sourceLanguageSelect">
+      </select>
+
+      <select id="targetLanguageSelect">
+      </select>
+
+      <select id="translationType">
+        <option value="p">Professional</option>
+        <option value="f">Informal</option>
+      </select>
+
+      <button id="translateButton">Translate</button>
+
+      <div id="outputContainer">
+        <h2>Translation: <p id="outputText"></p></h2>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

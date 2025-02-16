@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TranslatePlus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Added navbar -->
+  <nav class="navbar">
+    <a href="/th.html" class="navbar-brand">TranslatePlus</a>
+    <a href="/about" class="about">เกี่ยวกับ</a>
+    <a href="/" class="changelang">EN</a>
+  </nav>
+
+  <!-- Wrapped in main-content for proper spacing -->
+  <div class="main-content">
+    <div class="app-container">
+      <!-- Removed h1 since title is now in navbar -->
+      
+      <!-- Input text area -->
+      <textarea id="inputText" placeholder="พิมพ์คำเพื่อแปล"></textarea>
+
+      <!-- Source Language Selection -->
+      <select id="sourceLanguageSelect">
+        <!-- Languages will be dynamically added here -->
+      </select>
+
+      <!-- Target Language Selection -->
+      <select id="targetLanguageSelect">
+        <!-- Languages will be dynamically added here -->
+      </select>
+
+      <!-- Translation Type Selection -->
+      <select id="translationType">
+        <option value="p">เป็นทางการ</option>
+        <option value="f">ไม่เป็นทางการ</option>
+      </select>
+
+      <!-- Translate Button -->
+      <button id="translateButton">แปล</button>
+
+      <!-- Output Text -->
+      <div id="outputContainer">
+        <h2>คำแปล:</h2>
+        <p id="outputText"></p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
