@@ -12,7 +12,7 @@ Thank you to our teachers, AI, friends, and ourselves for supporting us in this 
 
 1.  During setup, select your preferred installation option (remember your choice!).
 
-    [Installation Option Choice](https://github.com/user-attachments/assets/9e3e543b-a04d-408c-b572-a95388f174dc)
+    ![Screenshot 2025-02-16 135547](https://github.com/user-attachments/assets/dc72a915-3079-4e04-8e19-837347a6a818)
 
 2.  Proceed with the setup normally, as with other programs.
 
@@ -20,35 +20,35 @@ Thank you to our teachers, AI, friends, and ourselves for supporting us in this 
 
     3.1 **Uncheck** "Launch TranslatePlus" and then click "Finish."
 
-        ![Uncheck Launch and Finish](https://github.com/user-attachments/assets/ffa139d1-749d-406e-be8d-0f342fd3f4b0)
+        ![Screenshot 2025-02-16 140340](https://github.com/user-attachments/assets/19f38c94-5a9b-4399-ac1b-841567590408)
 
     3.2 Press Windows+R on your keyboard, or right-click on the Start Menu and select "Run."
 
-        ![Run Command](https://github.com/user-attachments/assets/3beb057c-69c1-419b-b176-38598d51c635)
+        ![image](https://github.com/user-attachments/assets/ce31a5d1-1026-4f7c-bb0b-02c19b9d86f5)
 
     3.3 Type `C:\Program Files\TranslatePlus` and then press Enter.
 
-        ![File Explorer Path](https://github.com/user-attachments/assets/303b0e4f-6b30-4a97-807d-90fd129fd08f)
+        ![image](https://github.com/user-attachments/assets/c3dec8e8-98d0-4a37-99e1-46e78b0e4933)
 
     3.4 Right-click on `history.tph` and select "Properties."
 
-        ![History.tph Properties](https://github.com/user-attachments/assets/d4c8d11e-a8d7-4da3-8d00-a9d6f3061850)
+        ![Screenshot 2025-02-16 142452](https://github.com/user-attachments/assets/5b97c69e-ab91-41ea-85de-88e83ac1558c)
 
     3.5 Click on the "Security" tab.
 
-        ![Security Tab](https://github.com/user-attachments/assets/96c2e9e1-9081-493f-875e-a38f8ed6dd38)
+        ![image](https://github.com/user-attachments/assets/3c2bb5d9-0902-42eb-82c0-11f018759fd2)
 
     3.6 Click on "Edit."
 
-        ![Edit Permissions](https://github.com/user-attachments/assets/b91c9588-eb83-4aa3-984d-df3b5d8aca46)
+        ![image](https://github.com/user-attachments/assets/621c407d-383b-4c81-a8af-3ab7df0694d9)
 
     3.7 Click on "Users" and then check the "Full control" checkbox in the "Allow" column.
 
-        ![Full Control Permissions](https://github.com/user-attachments/assets/a8327f6e-cd63-42a3-835e-8367aa7593a1)
+        ![Screenshot 2025-02-16 143753](https://github.com/user-attachments/assets/5796abfe-6bc7-45b1-ad1c-61bdbdefcb78)
 
     3.8 Click "Apply" and then click "OK."
 
-        ![Apply Button](https://github.com/user-attachments/assets/6ec9d73c-f276-4566-8b10-ba7f0974f682)
-        ![OK Button](https://github.com/user-attachments/assets/662a553a-9e41-45c2-b91c-95612f7dfbe9)
+        ![Screenshot 2025-02-16 141512](https://github.com/user-attachments/assets/11a50c25-9444-4275-ab8c-795f425d233f)
+        ![Screenshot 2025-02-16 141524](https://github.com/user-attachments/assets/e12d567c-76ba-4123-813a-b343a5d4accb)
 
 4.  You can now use the program!
