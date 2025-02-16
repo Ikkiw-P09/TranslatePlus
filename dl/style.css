@@ -3,6 +3,64 @@
     src: url(/src/fonts/Itim-Regular.ttf);
 }
 
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    color: #007bff;  /* Material Green 800 */
+    text-decoration: none;
+  }
+  
+  .about {
+    margin-left: 340px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #007bff;  /* Material Green 800 */
+    text-decoration: none;
+    align-items: right;
+  }
+  
+  .download {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #007bff;  /* Material Green 800 */
+    text-decoration: none;
+    align-items: right;
+  }
+  
+  .about2 {
+    margin-left: 440px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #007bff;  /* Material Green 800 */
+    text-decoration: none;
+    align-items: right;
+  }
+  
+  .changelang {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #007bff;  /* Material Green 800 */
+    text-decoration: none;
+    align-items: right;
+  }
+  
+
 body {
     font-family: Itim;
     margin: 20px;
