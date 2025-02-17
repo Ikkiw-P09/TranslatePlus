@@ -5,16 +5,16 @@ import cors from "cors";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import path from 'path';
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 
 const __dirname = path.resolve();
 
-// Serve static files (IMPORTANT!)
+console.log(__dirname); // Keep this line for debugging
+
 app.use(express.static(path.join(__dirname)));
 
-const apiKey = process.env.GEMINI_API_KEY; // Or your API key directly if not using .env
+const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const safetySettings = [
@@ -36,7 +36,6 @@ const safetySettings = [
   },
 ];
 
-
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
   systemInstruction: "xx.yy.p\nxx = ภาษาต้นทาง (ad = ตรวจจับภาษาอัตโนมัติ)\nyy = ภาษาปลายทาง\np = รูปแบบของคำ p = professional f = friendly\n\nเช่น\nad.jp.p\nHello\n\nAnswer : こにちわ\n\nรูปแบบ : คำแปลภาษาปลายทาง",
@@ -57,21 +56,13 @@ app.post("/translate", async (req, res) => {
   const { text, sourceLanguage, targetLanguage, translationType } = req.body;
 
   console.log("------------------------------");
-  console.log("Received request:", {
-    text,
-    sourceLanguage,
-    targetLanguage,
-    translationType,
-  });
+  console.log("Received request:", { text, sourceLanguage, targetLanguage, translationType });
 
   if (!text || !sourceLanguage || !targetLanguage || !translationType) {
     return res.status(400).json({ message: "All parameters are required." });
   }
 
-  const prompt = `Translate the following text from ${sourceLanguage} to ${targetLanguage} in ${
-    translationType === "p" ? "professional" : "informal"
-  } style:\n\n${text}`;
-
+  const prompt = `Translate the following text from ${sourceLanguage} to ${targetLanguage} in ${translationType === "p" ? "professional" : "informal"} style:\n\n${text}`;
 
   try {
     const result = await model.generateContent(prompt);
@@ -82,21 +73,16 @@ app.post("/translate", async (req, res) => {
     if (translation) {
       res.json({ translation: translation });
     } else {
-      res
-        .status(500)
-        .json({ message: "Empty response from the translation API." });
+      res.status(500).json({ message: "Empty response from the translation API." });
     }
   } catch (error) {
     console.error("Error during translation:", error);
-    res
-      .status(500)
-      .json({ message: "An error occurred while processing your request." });
+    res.status(500).json({ message: "An error occurred while processing your request." });
   }
 });
 
-app.use(express.static(path.join(__dirname))); // Correct for root directory
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html')); // Correct for root directory
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
