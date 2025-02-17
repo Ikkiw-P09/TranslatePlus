@@ -148,7 +148,7 @@ function populateLanguages() {
 populateLanguages();
 
 // Replace YOUR_IP_ADDRESS with your actual computer's IP address
-const SERVER_URL = "http://localhost:3000/translate";
+const SERVER_URL = "/translate";  // Relative URL
 
 // Translate button functionality
 translateButton.addEventListener("click", async () => {
