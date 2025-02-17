@@ -3,10 +3,9 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use Heroku's port or 3000 for local
 
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
@@ -77,5 +76,5 @@ app.post("/translate", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);  // Log the actual port
 });

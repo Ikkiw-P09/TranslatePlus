@@ -4,7 +4,6 @@ const targetLanguageSelect = document.getElementById("targetLanguageSelect");
 const translationTypeSelect = document.getElementById("translationType");
 const translateButton = document.getElementById("translateButton");
 const outputText = document.getElementById("outputText");
-
 // Language map
 const languageMap = {
   'Auto': 'Auto-detect',
