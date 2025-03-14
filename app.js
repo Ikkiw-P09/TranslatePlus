@@ -4,6 +4,7 @@ const targetLanguageSelect = document.getElementById("targetLanguageSelect");
 const translationTypeSelect = document.getElementById("translationType");
 const translateButton = document.getElementById("translateButton");
 const outputText = document.getElementById("outputText");
+
 // Language map
 const languageMap = {
   'Auto': 'Auto-detect',
@@ -148,7 +149,7 @@ function populateLanguages() {
 populateLanguages();
 
 // Replace YOUR_IP_ADDRESS with your actual computer's IP address
-const SERVER_URL = "/translate";  // Relative URL
+const SERVER_URL = "http://192.168.1.102:5500/translate";
 
 // Translate button functionality
 translateButton.addEventListener("click", async () => {
@@ -206,4 +207,4 @@ translateButton.addEventListener("click", async () => {
     // Re-enable button
     translateButton.disabled = false;
   }
-}); 
+});

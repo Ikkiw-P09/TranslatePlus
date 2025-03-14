@@ -3,20 +3,15 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import path from 'path';
+import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
 const app = express();
-const port = process.env.PORT || 3000;
-
-const __dirname = path.resolve();
-
-console.log(__dirname); // Keep this line for debugging
-
-app.use(express.static(path.join(__dirname)));
+const port = 5500;
 
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
+// Fixed safety settings using the correct enum values
 const safetySettings = [
   {
     category: "HARM_CATEGORY_HARASSMENT",
@@ -62,13 +57,13 @@ app.post("/translate", async (req, res) => {
     return res.status(400).json({ message: "All parameters are required." });
   }
 
-  const prompt = `Translate the following text from ${sourceLanguage} to ${targetLanguage} in ${translationType === "p" ? "professional" : "informal"} style:\n\n${text}`;
+  const prompt = `Translate the following text from ${sourceLanguage} to ${targetLanguage} in ${translationType === 'p' ? 'professional' : 'informal'} style:\n\n${text}`;
 
   try {
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const translation = response.text();
-    console.log("API Response:", translation, "-----------------------------\n");
+    console.log("API Response:", translation,"-----------------------------\n");
 
     if (translation) {
       res.json({ translation: translation });
@@ -81,10 +76,6 @@ app.post("/translate", async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running at http://192.168.1.102:${port}`);
 });
